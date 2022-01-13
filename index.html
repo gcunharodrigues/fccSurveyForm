@@ -5,45 +5,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Survey Form</title>
+  <title>Avaliação de Perfil</title>
   <meta name="description" content="Survey Form for freeCodeCamp" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" 
+    rel="stylesheet">
 </head>
 
 <body>
 
   <main class="container">
     <header>
-      <h1 id="title">Guilherme's FCC Survey Form</h1>
+      <h1 id="title">Avaliação de Perfil - Guilherme</h1>
       <p id="description">Por favor, responda as perguntas abaixo sobre como 
         encontrou o meu perfil:</p>
-    </header>
+      </header>
 
     <form id="survey-form">
 
       <div class="form-group">
         <label for="name" id="name-label">Nome:</label>
-        <input type="text" id="name" name="name" placeholder="Qual o seu nome?" 
-          required />
+        <input class="form-control" type="text" id="name" name="name" 
+          placeholder="Qual o seu nome?" required />
       </div>
       <div class="form-group">
         <label for="email" id="email-label">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="Qual o seu e-mail?"
+        <input class="form-control" type="email" id="email" name="email" placeholder="Qual o seu e-mail?"
           required />
       </div>
       <div class="form-group">
         <label for="number" id="number-label">Idade:</label>
-        <input type="number" id="number" name="age" placeholder="Qual a sua idade?"
+        <input class="form-control" type="number" id="number" name="age" placeholder="Qual a sua idade?"
           min="10" max="120" />
       </div>
       <div class="form-group">
         <label for="job" id="job-label">Para qual vaga estou sendo prospectado?:</label>
-        <input type="text" id="job" name="job" placeholder="Qual a vaga ?"
+        <input class="form-control" type="text" id="job" name="job" placeholder="Qual a vaga ?"
           required />
       </div>
       <div class="form-group">
-        <label for="dropdown" id="dropdown-label">Como você encontrou o meu perfil?
-        <select id="dropdown" name="dropdown" required>
+        <label for="dropdown" id="dropdown-label">Como você encontrou o meu perfil?</label>
+        <select class="form-control" id="dropdown" name="dropdown" required>
           <option disabled selected value>Selecione uma opção</option>
           <option value="google">Google</option>
           <option value="facebook">Facebook</option>
@@ -52,7 +56,6 @@
           <option value="linkedin">LinkedIn</option>
           <option value="other">Outro</option>
         </select>
-        </label>
       </div>
       <div class="form-group">
         <p>O meu perfil é adequado?</p>
@@ -75,7 +78,7 @@
       <div class="form-group">
         <label for="textarea" id="textarea-label">O que deveria ser melhorados
           especificamente?</label>
-        <textarea id="textarea" name="textarea" placeholder="Escreva aqui a sua avaliação"
+        <textarea id="textarea" name="textarea" placeholder="Escreva aqui a sua avaliação."
           required></textarea>
       </div>
       <div class="form-group">

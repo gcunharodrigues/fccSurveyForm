@@ -1,3 +1,95 @@
 html {
     font-size: 10px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    background: #000;
+    margin: 0;
+    line-height: 3rem;
+    --content-width: 100%;
+    --content-max-width: 75%;
+    text-align: left;
+}
+
+.container {
+    font-size: 2rem;    
+}
+
+header {
+    display: block;
+    width: var(--content-width);
+    max-width: var(--content-max-width);
+    margin: auto;
+    color: #fff;
+    padding: 1.5% 0 0 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: block;
+    width: var(--content-width);
+    max-width: var(--content-max-width);
+    background-color: rgb(248, 233, 101);
+    margin: auto;
+    padding: 2%;
+    border-radius: 0.5rem;
+}
+
+.form-group {
+    display: block;
+    margin: 0 0 2% 0;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin: 0% 0 0.5% 0;
+}
+
+.form-control {
+    display: block;
+    width: var(--content-width);
+    height: 3rem;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+p {
+    display: block;
+    margin-bottom: 0.5%;
+}
+
+#description {
+    text-align: justify;
+    font-style: italic;
+}
+
+textarea {
+    min-height: 20rem;
+    width: var(--content-width);
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+    padding: 0.5% 0 0 1rem;
+}
+
+button {
+    display: block;
+    width: var(--content-width);
+    height: 4rem;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    background-color: rgb(235, 235, 235);
+    color: #000;
+    font-size: 2rem;
+}
+
+input, #dropdown {
+    padding: 0 0 0 1rem;
 }
